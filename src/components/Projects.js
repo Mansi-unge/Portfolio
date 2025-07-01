@@ -23,7 +23,14 @@ const projects = [
     description: "High-fidelity UI kit for a property buying app designed in Figma.",
     tech: ["Figma", "Design System", "Prototyping"],
     image: "/projects/realestate-ui.png",
-    live: "https://www.figma.com/file/example123",
+    previewImages: [
+    "/Screen1.png",
+    "/screen2.png",
+    "/screen2-1.png",
+    "/screen2-2.png",
+    "/screen2-3.png",
+    "/screen3.png"
+  ],
     code: null,
   },
 ]; 

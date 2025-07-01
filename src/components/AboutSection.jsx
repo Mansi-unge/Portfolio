@@ -1,5 +1,7 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaJava, FaGitAlt } from "react-icons/fa";
+import { SiDocker } from "react-icons/si";
+
 import {
   SiMongodb,
   SiMysql,
@@ -65,6 +67,13 @@ const techStack = [
       { name: "Core Java", icon: <FaJava className="text-red-400" /> },
     ],
   },
+  {
+  category: "DevOps & Containerization",
+  skills: [
+    { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
+  ],
+}
+
 ];
 
 const AboutSection = () => {

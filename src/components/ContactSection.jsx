@@ -22,9 +22,10 @@ const ContactSection = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center md:text-left mb-4 tracking-tight bg-gradient-to-r from-[#f472b6] via-[#8b5cf6] to-[#58a6ff] bg-clip-text text-transparent animate-pulse">
             Let’s Work Together
           </h2>
-          <p className="text-center md:text-left text-gray-400 mb-6 lg:mb-10  max-w-xl mx-auto md:mx-0">
-            🤝 Whether it's a new opportunity, freelance gig, or just geeking out over design systems — I’d love to hear from you.
-          </p>
+          <p className="max-w-2xl  text-gray-400 mb-6  text-center md:text-left italic font-serif text-sm">
+          I believe every conversation opens a new door — whether it’s a project, collaboration, or just a hello.
+          Drop me a message and let’s build something amazing together!
+        </p>
 
           <div className="flex items-center gap-3 break-all">
             <FaEnvelope className="text-[#8b5cf6]" />
