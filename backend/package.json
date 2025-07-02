@@ -4,8 +4,8 @@
   "description": "Backend server for contact form using Nodemailer",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node index.js",
+    "dev": "node index.js"
   },
   "author": "Your Name",
   "license": "ISC",
