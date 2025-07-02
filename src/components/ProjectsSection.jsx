@@ -87,7 +87,7 @@ const ProjectsSection = () => {
 
       <div className="flex justify-center mt-6">
         <a
-          href="/projects" // Change to actual route if needed
+          href="/projects" 
           className="text-sm font-semibold bg-[#1f6feb] hover:bg-[#388bfd] text-white px-6 py-2 rounded-full transition"
         >
           View More Projects
