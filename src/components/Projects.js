@@ -23,7 +23,7 @@ const projects = [
     description: "A modern, responsive MERN portfolio web app that showcases my developer journey, featured projects, and resume with smooth GSAP animations and a clean, intuitive UI.",
     tech: ["React", "Node.js" , "Express.js", "MongoDB", "Tailwind", "JSON API"],
     image: "/Portfolio.png",
-    live: "https://mansiungeportfolio.vercel.app/",
+    live: "https://mansiunge.vercel.app/",
     code: "https://github.com/Mansi-unge/Portfolio.git",
   },
   {
