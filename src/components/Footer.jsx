@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaEnvelope,
+  FaTwitter,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -61,7 +62,16 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="mailto:mansiunge2002@gmail.com"
+            href="https://twitter.com/mansiunge60256"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            className="hover:text-[#1DA1F2] transition"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="mailto:mansiunge@gmail.com"
             aria-label="Email"
             className="hover:text-[#58a6ff] transition"
           >

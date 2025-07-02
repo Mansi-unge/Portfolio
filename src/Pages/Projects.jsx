@@ -29,18 +29,11 @@ const ProjectCard = ({ title, description, tech, image, live, code, type, badge 
     transition={{ duration: 0.4 }}
     viewport={{ once: true }}
   >
-    <Tilt
-      tiltMaxAngleX={6}
-      tiltMaxAngleY={6}
-      glareEnable={true}
-      glareMaxOpacity={0.1}
-      scale={1.02}
-      className="w-full h-full"
-    >
       <div className="group relative bg-[#161b22]/80 backdrop-blur-md rounded-xl border border-[#30363d] overflow-hidden hover:border-[#58a6ff]/60 shadow transition-all duration-300">
         <img
           src={image}
           alt={title}
+          loading="lazy"
           className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition duration-500"
         />
         <span className="absolute top-3 left-3 text-[10px] bg-[#1f6feb] text-white px-2 py-1 rounded uppercase font-mono tracking-wider shadow">
@@ -53,9 +46,9 @@ const ProjectCard = ({ title, description, tech, image, live, code, type, badge 
         )}
         <div className="p-5">
           <h3 className="text-xl font-bold text-[#f0f6fc] mb-2">{title}</h3>
-          <p className="text-sm text-[#8b949e] mb-4 leading-relaxed">{description}</p>
+          <p className="text-sm text-[#adb5bd] mb-4 leading-relaxed">{description}</p>
           <div className="flex flex-wrap gap-2 mb-4 items-center">
-            {tech.map((t, i) => (
+            {tech?.map((t, i) => (
               <span
                 key={i}
                 className="text-xs font-mono bg-[#161b22] border border-[#30363d] text-[#58a6ff] px-2 py-1 rounded-full flex items-center gap-1"
@@ -64,7 +57,7 @@ const ProjectCard = ({ title, description, tech, image, live, code, type, badge 
               </span>
             ))}
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 flex-wrap">
             {live && (
               <a
                 href={live}
@@ -88,7 +81,6 @@ const ProjectCard = ({ title, description, tech, image, live, code, type, badge 
           </div>
         </div>
       </div>
-    </Tilt>
   </motion.div>
 );
 
@@ -118,15 +110,17 @@ const Projects = () => {
       </motion.div>
 
       {/* Filters */}
-      <div className="flex flex-wrap justify-center gap-3 mb-10">
+      <div className="flex flex-wrap sm:flex-nowrap overflow-x-auto gap-3 mb-10 scrollbar-hide justify-center">
         {categories.map(({ name, icon }) => (
           <button
             key={name}
             onClick={() => setActiveCategory(name)}
-            className={`flex items-center gap-2 px-4 py-1.5 text-sm font-semibold rounded-full border transition duration-200 shadow-sm
-              ${activeCategory === name
+            aria-label={`Filter projects by ${name}`}
+            className={`flex items-center gap-2 px-4 py-1.5 text-sm font-semibold rounded-full border transition duration-200 shadow-sm ${
+              activeCategory === name
                 ? "bg-[#1f6feb] text-white"
-                : "border-[#30363d] text-gray-400 hover:bg-[#21262d]"}`}
+                : "border-[#30363d] text-gray-400 hover:bg-[#21262d]"
+            }`}
           >
             {icon} {name}
           </button>
@@ -134,7 +128,7 @@ const Projects = () => {
       </div>
 
       {/* Project Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-10">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((proj, idx) => (
             <ProjectCard key={idx} {...proj} />

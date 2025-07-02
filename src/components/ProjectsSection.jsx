@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiTailwindcss } from "react-icons/si";
 import projects from "./Projects";
-import DesignModal from "./DesignModal";
 
 const iconMap = {
   React: <FaReact className="text-cyan-400" />,
@@ -12,21 +11,24 @@ const iconMap = {
   Figma: <FaFigma className="text-pink-400" />,
 };
 
-const categories = ["All", "Frontend", "Full Stack", "UI/UX Design"];
-
-const ProjectCard = ({ title, description, tech, image, live, code, type, previewImages, onPreview }) => (
+const ProjectCard = ({ title, description, tech, image, live, code, type }) => (
   <div className="bg-[#161b22]/70 backdrop-blur-md rounded-xl border border-[#30363d] hover:border-[#58a6ff]/60 hover:shadow-[0_0_15px_#58a6ff33] transition-all duration-300 group">
     <div className="relative">
-      <img src={image} alt={title} className="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition" />
+      <img
+        src={image}
+        alt={title}
+        loading="lazy"
+        className="w-full h-52 object-cover grayscale group-hover:grayscale-0 transition rounded-t-xl"
+      />
       <span className="absolute top-3 left-3 text-[10px] bg-[#1f6feb] text-white px-2 py-1 rounded uppercase font-mono tracking-wider shadow">
         {type}
       </span>
     </div>
     <div className="p-5">
       <h3 className="text-xl font-bold text-[#f0f6fc] mb-2">{title}</h3>
-      <p className="text-sm text-[#8b949e] mb-4 leading-relaxed">{description}</p>
+      <p className="text-sm text-[#adb5bd] mb-4 leading-relaxed">{description}</p>
       <div className="flex flex-wrap gap-2 mb-4 items-center">
-        {tech.map((t, i) => (
+        {tech?.map((t, i) => (
           <span
             key={i}
             className="text-xs font-mono bg-[#161b22] border border-[#30363d] text-[#58a6ff] px-2 py-1 rounded-full flex items-center gap-1"
@@ -57,30 +59,13 @@ const ProjectCard = ({ title, description, tech, image, live, code, type, previe
             Code
           </a>
         )}
-        {previewImages && (
-          <button
-            onClick={() => onPreview(previewImages)}
-            className="text-xs font-semibold bg-[#1f6feb] hover:bg-[#316dca] text-white px-4 py-1.5 rounded-md transition shadow"
-          >
-            Preview Design
-          </button>
-        )}
       </div>
     </div>
   </div>
 );
 
 const ProjectsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [modalImages, setModalImages] = useState(null);
-
-  const openPreviewModal = (images) => setModalImages(images);
-  const closePreviewModal = () => setModalImages(null);
-
-  const filteredProjects =
-    activeCategory === "All"
-      ? projects
-      : projects.filter((proj) => proj.type === activeCategory);
+  const topThreeProjects = projects.slice(0, 3);
 
   return (
     <section
@@ -90,37 +75,24 @@ const ProjectsSection = () => {
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 tracking-tight bg-gradient-to-r from-[#58a6ff] to-[#8b5cf6] bg-clip-text text-transparent">
         My Work & Creations
       </h2>
-      <p className="text-center text-sm md:text-base text-gray-500 mb-6 font-mono">
+      <p className="text-center text-sm md:text-base text-gray-400 mb-6 font-mono">
         Explore my best UI designs, full-stack apps, and frontend builds
       </p>
 
-      <div className="flex flex-wrap justify-center gap-3 mb-10">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-1.5 text-sm font-semibold rounded-full border transition ${
-              activeCategory === cat
-                ? "bg-[#1f6feb] text-white"
-                : "border-[#30363d] text-gray-400 hover:bg-[#21262d]"
-            }`}
-          >
-            {cat}
-          </button>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-6 rounded-xl">
+        {topThreeProjects.map((proj, idx) => (
+          <ProjectCard key={idx} {...proj} />
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {filteredProjects.length > 0 ? (
-          filteredProjects.map((proj, idx) => (
-            <ProjectCard key={idx} {...proj} onPreview={openPreviewModal} />
-          ))
-        ) : (
-          <p className="col-span-full text-center text-gray-500">No projects found in this category.</p>
-        )}
+      <div className="flex justify-center mt-6">
+        <a
+          href="/projects" // Change to actual route if needed
+          className="text-sm font-semibold bg-[#1f6feb] hover:bg-[#388bfd] text-white px-6 py-2 rounded-full transition"
+        >
+          View More Projects
+        </a>
       </div>
-
-      {modalImages && <DesignModal images={modalImages} onClose={closePreviewModal} />}
     </section>
   );
 };

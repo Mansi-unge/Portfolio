@@ -80,10 +80,10 @@ const About = () => {
           Notable Projects
         </h3>
         <ul className="space-y-3 text-sm text-gray-400 font-mono">
-          {/* <li className="flex items-start gap-2">
+          <li className="flex items-start gap-2">
             <FaShoppingBag className="text-pink-400 mt-1" />
             <span><Highlight>Maharashtrian Jewelry Store</Highlight> – Built full e-commerce site with user auth and cart functionality.</span>
-          </li> */}
+          </li>
           <li className="flex items-start gap-2">
             <MdAirplanemodeActive className="text-teal-400 mt-1" />
             <span><Highlight>Shakti Drone Tracker</Highlight> – Visualized real-time drone telemetry with React and API integration during internship at PRYM.</span>

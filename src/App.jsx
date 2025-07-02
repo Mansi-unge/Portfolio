@@ -1,3 +1,4 @@
+// App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
@@ -12,12 +13,15 @@ import ContactSection from './components/ContactSection';
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        {/* Homepage with all sections */}
         <Route
           path="/"
           element={
@@ -30,13 +34,12 @@ function App() {
             </>
           }
         />
-
-        {/* Separate About Page */}
         <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <ToastContainer position="bottom-center" autoClose={3000} hideProgressBar newestOnTop />
     </Router>
   );
 }

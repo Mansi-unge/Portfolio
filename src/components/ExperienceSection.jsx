@@ -68,7 +68,7 @@ const ExperienceSection = () => {
         Experience
       </h2>
       <p className="text-center text-sm md:text-base text-gray-500 mb-4 lg:mb-8 font-mono">
-        ✨ From crafting responsive UIs to building real-time systems — here’s what I've worked on.
+        From crafting responsive UIs to building real-time systems — here’s what I've worked on.
       </p>
 
       <div className="grid md:grid-cols-2 gap-10">

@@ -53,18 +53,18 @@ const techStack = [
     ],
   },
   {
-    category: "Version Control & Deployment",
-    skills: [
-      { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
-      { name: "GitHub", icon: <SiGithub className="text-white" /> },
-    ],
-  },
-  {
     category: "Programming Languages",
     skills: [
       { name: "C", icon: <SiC className="text-blue-300" /> },
       { name: "C++", icon: <SiCplusplus className="text-blue-400" /> },
       { name: "Core Java", icon: <FaJava className="text-red-400" /> },
+    ],
+  },
+  {
+    category: "Version Control & Deployment",
+    skills: [
+      { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
+      { name: "GitHub", icon: <SiGithub className="text-white" /> },
     ],
   },
   {
