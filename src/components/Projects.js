@@ -34,7 +34,16 @@ const projects = [
     image: "/checklist.png",
     live: "https://mansi-unge.github.io/checkllist/",
     code: "https://github.com/Mansi-unge/checkllist.git",
-  },  
+  }, 
+  {
+     type: "UI/UX Design",
+    title: "Dehucha Chintamani",
+    description: "Designed a culturally rich UI/UX for the renowned Dehucha Chintamani Ganpati Temple, blending historical aesthetics with modern usability. The interface preserves the temple’s ancient essence while offering a seamless digital experience for devotees.",
+    tech: ["Figma"],
+    image: "/Chintamani.png",
+    live: "https://www.figma.com/design/54ehTFD3D5NCcEkU6ROF1Z/Dehucha-Chintamani?node-id=4-510&t=IGaQxT1RB082crsF-0",
+  }, 
+
 ]; 
 
 
