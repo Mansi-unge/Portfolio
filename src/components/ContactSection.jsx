@@ -28,14 +28,14 @@ const ContactSection = () => {
 
       const data = await res.json();
       if (data.success) {
-        toast.success("✅ Message sent successfully!");
+        toast.success("Message sent successfully!");
         formRef.current.reset();
       } else {
-        toast.error("❌ Failed to send message.");
+        toast.error("Failed to send message.");
       }
     } catch (err) {
       console.error("Error:", err);
-      toast.error("❌ Something went wrong. Please try again.");
+      toast.error("Something went wrong. Please try again.");
     }
   };
 

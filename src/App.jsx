@@ -39,7 +39,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-      <ToastContainer position="bottom-center" autoClose={3000} hideProgressBar newestOnTop />
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar newestOnTop />
     </Router>
   );
 }
