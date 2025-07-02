@@ -17,6 +17,15 @@ const projects = [
     live: "https://ashiyana.netlify.app/",
     code: "https://github.com/Mansi-unge/Ashiyana.git",
   },
+   {
+     type: "Full Stack",
+    title: "Mansi_Unge Portfolio",
+    description: "A modern, responsive MERN portfolio web app that showcases my developer journey, featured projects, and resume with smooth GSAP animations and a clean, intuitive UI.",
+    tech: ["React", "Node.js" , "Express.js", "MongoDB", "Tailwind", "JSON API"],
+    image: "/Ashiyana.png",
+    live: "https://mansiungeportfolio.vercel.app/",
+    code: "https://github.com/Mansi-unge/Portfolio.git",
+  },
   {
      type: "Frontend",
     title: "Peaceful-Pulse",
