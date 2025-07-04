@@ -22,7 +22,7 @@ const projects = [
     title: "Online Code Compiler API",
     description: "A fully self-hosted, Docker-powered code execution API that supports Python, C, C++, Java, Go, Node.js, PHP, Ruby, Bash, and C#. It replaces Judge0 with complete control, offline support, and MongoDB-based submission tracking.",
     tech: ["Node.js", "Express.js", "Docker", "MongoDB", "Mongoose"],
-    image: "", 
+    image: "/online_compiler_Architecture.png", 
     code: "https://github.com/Mansi-unge/OnlineCompiler",
   },
    {
