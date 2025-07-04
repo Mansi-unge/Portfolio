@@ -18,6 +18,14 @@ const projects = [
     code: "https://github.com/Mansi-unge/Ashiyana.git",
   },
    {
+     type: "Backend",
+    title: "Online Code Compiler API",
+    description: "A fully self-hosted, Docker-powered code execution API that supports Python, C, C++, Java, Go, Node.js, PHP, Ruby, Bash, and C#. It replaces Judge0 with complete control, offline support, and MongoDB-based submission tracking.",
+    tech: ["Node.js", "Express.js", "Docker", "MongoDB", "Mongoose"],
+    image: "", 
+    code: "https://github.com/Mansi-unge/OnlineCompiler",
+  }
+   {
      type: "Full Stack",
     title: "Mansi_Unge Portfolio",
     description: "A modern, responsive MERN portfolio web app that showcases my developer journey, featured projects, and resume with smooth GSAP animations and a clean, intuitive UI.",
