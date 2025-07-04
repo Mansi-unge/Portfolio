@@ -8,7 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import { monokai } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { gsap } from "gsap";
 
 const HeroSection = () => {
