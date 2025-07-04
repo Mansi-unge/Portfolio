@@ -18,6 +18,7 @@ const iconMap = {
 const categories = [
   { name: "All", icon: <HiOutlineViewGrid /> },
   { name: "Frontend", icon: <FaReact /> },
+  { name: "Backend", icon: <FaNodeJs /> },
   { name: "Full Stack", icon: <FaNodeJs /> },
   { name: "UI/UX Design", icon: <FaFigma /> },
 ];
