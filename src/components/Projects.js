@@ -24,7 +24,7 @@ const projects = [
     tech: ["Node.js", "Express.js", "Docker", "MongoDB", "Mongoose"],
     image: "", 
     code: "https://github.com/Mansi-unge/OnlineCompiler",
-  }
+  },
    {
      type: "Full Stack",
     title: "Mansi_Unge Portfolio",
