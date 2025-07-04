@@ -10,7 +10,6 @@ const Header = () => {
     <header className="w-full bg-[#161b22] text-[#c9d1d9] shadow-sm border-b border-[#30363d] px-6 md:px-20 py-4 flex items-center justify-between sticky top-0 z-50">
       {/* Logo */}
       <div className="flex items-center gap-2 text-xl font-semibold">
-        <FaGithub className="text-2xl text-white" />
         <a href="/" className="sm:inline text-2xl font-mono">
           mansi.dev
         </a>
@@ -24,8 +23,9 @@ const Header = () => {
       {/* Desktop Navigation */}
       <nav className="hidden sm:flex gap-6 font-mono text-md">
         <a href="/" className="hover:text-white transition hover:underline">Home</a>
-        <a href="/projects" className="hover:text-white transition hover:underline">Projects</a>
         <a href="/about" className="hover:text-white transition hover:underline">About</a>
+        <a href="/projects" className="hover:text-white transition hover:underline">Projects</a>
+          <a href="/blog" onClick={toggleMenu} className="hover:text-white transition">Blog</a>
         <a href="/contact" className="hover:text-white transition hover:underline">Contact</a>
         <a
           href="https://github.com/Mansi-unge"
@@ -38,10 +38,11 @@ const Header = () => {
 
       {/* Mobile Navigation Dropdown */}
       {isOpen && (
-        <div className="absolute top-14 left-0 w-full bg-[#161b22] text-center py-4 flex flex-col gap-4 font-mono sm:hidden border-t border-[#30363d]">
+        <div className="absolute top-14 left-0 w-full bg-[#161b22] py-4 px-4 flex flex-col gap-4 font-mono sm:hidden border-t border-[#30363d]">
           <a href="/" onClick={toggleMenu} className="hover:text-white transition">Home</a>
-          <a href="/projects" onClick={toggleMenu} className="hover:text-white transition">Projects</a>
           <a href="/about" onClick={toggleMenu} className="hover:text-white transition">About</a>
+          <a href="/projects" onClick={toggleMenu} className="hover:text-white transition">Projects</a>
+           <a href="/blog" onClick={toggleMenu} className="hover:text-white transition">Blog</a>
           <a href="#contact" onClick={toggleMenu} className="hover:text-white transition">Contact</a>
           <a
             href="https://github.com/Mansi-unge"

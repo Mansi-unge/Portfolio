@@ -13,9 +13,9 @@ import ContactSection from './components/ContactSection';
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
-
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BlogPage from "./Pages/BlogPage";
 
 function App() {
   return (
@@ -37,6 +37,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={ <BlogPage/> } />
       </Routes>
       <Footer />
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar newestOnTop />

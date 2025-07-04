@@ -49,13 +49,8 @@ const HeroSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-[#0d1117] text-[#c9d1d9] flex flex-col lg:flex-row items-center justify-center py-4 lg:pt-12 lg:pb-20 px-4 sm:px-10 md:px-16 lg:px-32 relative overflow-hidden"
+      className="bg-[#0d1117] text-[#c9d1d9] flex flex-col lg:flex-row items-center justify-center py-4 lg:pt-12 lg:pb-10 px-4 sm:px-10 md:px-16 lg:px-32 relative overflow-hidden"
     >
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-gray-600 text-xs animate-bounce z-20 font-mono">
-        ↓ keep scrolling to explore ↓
-      </div>
-
       {/* Left Column */}
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left fade-in">
         {/* Avatar */}
