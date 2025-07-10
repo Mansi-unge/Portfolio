@@ -1,12 +1,20 @@
-# React + Vite
+# 💼 Personal Portfolio - Built with React & Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This responsive and modern web app showcases my projects, skills, resume, and contact information—all built using **React** and **Tailwind CSS** for a fast and stylish frontend experience.
 
-Currently, two official plugins are available:
+![Portfolio Screenshot](./screenshot.png) <!-- Replace with actual path -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+🔗 [View Live Site](https://your-portfolio-url.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Tech Stack
+
+- **Frontend:** React.js
+- **Styling:** Tailwind CSS
+- **Routing:** React Router (if used)
+- **Deployment:** Vercel / Netlify / GitHub Pages
+
+---
