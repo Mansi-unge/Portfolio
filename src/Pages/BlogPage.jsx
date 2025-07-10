@@ -34,7 +34,7 @@ const BlogCard = ({ blog }) => (
     <img
       src={blog.coverImage}
       alt={blog.title}
-      className="w-full h-52 object-cover grayscale group-hover:grayscale-0 transition duration-500"
+      className="w-full h-56 object-cover grayscale group-hover:grayscale-0 transition duration-500"
     />
     <div className="p-5">
       <h3 className="text-lg font-bold text-[#f0f6fc] mb-1 group-hover:text-[#58a6ff] transition">
