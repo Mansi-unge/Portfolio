@@ -19,7 +19,7 @@ const dummyBlogs = [
   date: "July 9, 2025",
   coverImage:
     "https://cdn.hashnode.com/res/hashnode/image/upload/v1752054014089/56b7a7e6-d5d5-4426-942b-cf65068198ec.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp", 
-  url: "/blog2.png"
+  url: "https://cdn.hashnode.com/res/hashnode/image/upload/v1752043085256/9e06a281-ae2f-40d1-acfa-d213dcaad554.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
 }
 ];
 
