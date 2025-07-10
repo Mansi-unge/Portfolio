@@ -11,8 +11,16 @@ const dummyBlogs = [
   coverImage:
     "https://cdn.hashnode.com/res/hashnode/image/upload/v1751553084901/7f1e3f5a-e75b-4876-9fc9-ba69978e26fa.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp", 
   url: "https://mansiunge.hashnode.dev/introducing-crackitdev-tech-interviews-cracked-the-right-way "
+},
+  {
+  title: "From Changing Button Colors to Building Full-Stack Dreams: My MERN Journey (So Far)",
+  description:
+    "How I went from fearing the backend to embracing full-stack development with the MERN stack — the ups, the bugs, and the breakthroughs along the way.",
+  date: "July 9, 2025",
+  coverImage:
+    "https://cdn.hashnode.com/res/hashnode/image/upload/v1752054014089/56b7a7e6-d5d5-4426-942b-cf65068198ec.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp", 
+  url: "https://mansiunge.hashnode.dev/from-changing-button-colors-to-building-full-stack-dreams-my-mern-journey-so-far"
 }
-
 ];
 
 const BlogCard = ({ blog }) => (
