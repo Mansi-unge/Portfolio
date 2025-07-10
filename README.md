@@ -2,11 +2,11 @@
 
 Welcome to my personal portfolio website! This responsive and modern web app showcases my projects, skills, resume, and contact information—all built using **React** and **Tailwind CSS** for a fast and stylish frontend experience.
 
-![Portfolio Screenshot](./screenshot.png) <!-- Replace with actual path -->
+![image](https://github.com/user-attachments/assets/d905f6bb-db29-4124-9792-cbd6ab5f16e8)
 
 ## 🌐 Live Demo
 
-🔗 [View Live Site](https://your-portfolio-url.com)
+🔗 [View Live Site](https://mansiunge.vercel.app/)
 
 ---
 
