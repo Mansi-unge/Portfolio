@@ -62,7 +62,6 @@ const HeroSection = () => {
               className="object-cover w-full h-full rounded-full "
             />
           </div>
-          <div className="absolute inset-0 animate-ping border-4 border-[#38bdf8] opacity-20 z-[-1] rounded-full"></div>
         </div>
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
