@@ -27,7 +27,7 @@ const dummyBlogs = [
     "Stuck in tutorial hell? Here's how I broke free, stopped mindless learning, and started building real-world projects — with AI guiding me through every roadblock.",
   date: "July 18, 2025",
   coverImage:
-    "https://cdn.hashnode.com/res/hashnode/image/upload/v1752045643245/bfd232c5-2e80-4f85-b19c-bb49b53b5cf1.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    "https://cdn.hashnode.com/res/hashnode/image/upload/v1752743630197/a517cb08-3dcd-4a15-8473-6b8bcfd52966.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   url: "https://mansiunge.hashnode.dev/from-tutorial-hell-to-building-my-own-projects-my-real-journey-with-ai-as-my-guide"
 },
   {
@@ -36,7 +36,7 @@ const dummyBlogs = [
     "Struggling to learn everything before building? You’re not alone. This blog breaks the myth of 'learn first, build later' and offers practical advice for beginners, slow learners, and overwhelmed devs starting their full-stack journey.",
   date: "July 24, 2025",
   coverImage:
-    "https://cdn.hashnode.com/res/hashnode/image/upload/v1752046373482/56cc93a3-17c0-4295-9ec2-b30c0654ae04.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    "https://cdn.hashnode.com/res/hashnode/image/upload/v1753377876062/df3df327-7627-41da-ba0e-3cd79cf1a3fb.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
   url: "https://mansiunge.hashnode.dev/why-learn-everything-first-is-a-lie-and-what-actually-works"
 }
 ];
