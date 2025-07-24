@@ -20,6 +20,24 @@ const dummyBlogs = [
   coverImage:
     "https://cdn.hashnode.com/res/hashnode/image/upload/v1752043085256/9e06a281-ae2f-40d1-acfa-d213dcaad554.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp", 
   url: "https://mansiunge.hashnode.dev/from-changing-button-colors-to-building-full-stack-dreams-my-mern-journey-so-far"
+},
+  {
+  title: "From Tutorial Hell to Building My Own Projects: My Real Journey (With AI As My Guide)",
+  description:
+    "Stuck in tutorial hell? Here's how I broke free, stopped mindless learning, and started building real-world projects — with AI guiding me through every roadblock.",
+  date: "July 18, 2025",
+  coverImage:
+    "https://cdn.hashnode.com/res/hashnode/image/upload/v1752045643245/bfd232c5-2e80-4f85-b19c-bb49b53b5cf1.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+  url: "https://mansiunge.hashnode.dev/from-tutorial-hell-to-building-my-own-projects-my-real-journey-with-ai-as-my-guide"
+},
+  {
+  title: "Why 'Learn Everything First' Is a Lie – And What Actually Works",
+  description:
+    "Struggling to learn everything before building? You’re not alone. This blog breaks the myth of 'learn first, build later' and offers practical advice for beginners, slow learners, and overwhelmed devs starting their full-stack journey.",
+  date: "July 24, 2025",
+  coverImage:
+    "https://cdn.hashnode.com/res/hashnode/image/upload/v1752046373482/56cc93a3-17c0-4295-9ec2-b30c0654ae04.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+  url: "https://mansiunge.hashnode.dev/why-learn-everything-first-is-a-lie-and-what-actually-works"
 }
 ];
 
