@@ -2,9 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   FaGithub,
   FaLinkedin,
-  FaWhatsapp,
-  FaInstagram,
-  FaTelegramPlane,
   FaTwitter,
 } from "react-icons/fa";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -89,15 +86,6 @@ const HeroSection = () => {
           </a>
           <a href="https://www.linkedin.com/in/mansi-unge-8825ba312" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-[#0077b5] transition">
             <FaLinkedin />
-          </a>
-          <a href="https://wa.me/919359431750" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="hover:text-[#25D366] transition">
-            <FaWhatsapp />
-          </a>
-          <a href="https://instagram.com/mansi_unge" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-[#E1306C] transition">
-            <FaInstagram />
-          </a>
-          <a href="https://t.me/Mansi_Unge" target="_blank" rel="noopener noreferrer" aria-label="Telegram" className="hover:text-[#0088cc] transition">
-            <FaTelegramPlane />
           </a>
           <a href="https://twitter.com/mansiunge60256" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-[#1DA1F2] transition">
             <FaTwitter />
