@@ -15,6 +15,7 @@ import Contact from "./Pages/Contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BlogPage from "./Pages/BlogPage";
+import Skills from "./components/Skills";
 
 function App() {
   // Inject Tidio Chatbot Script Once (Global)
@@ -35,6 +36,7 @@ function App() {
             <>
               <HeroSection />
               <AboutSection />
+              <Skills/>
               <ProjectsSection />
               <ExperienceSection />
               <ContactSection />

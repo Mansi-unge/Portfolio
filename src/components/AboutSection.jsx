@@ -1,123 +1,147 @@
-import React from "react";
-import { FaReact, FaNodeJs, FaJava, FaGitAlt } from "react-icons/fa";
-import { SiDocker } from "react-icons/si";
+'use client';
+import { motion } from 'framer-motion';
+import { FiCpu, FiFeather, FiZap, FiUsers } from 'react-icons/fi';
+import { Typewriter } from 'react-simple-typewriter'; // npm install react-simple-typewriter
 
-import {
-  SiMongodb,
-  SiMysql,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTailwindcss,
-  SiBootstrap,
-  SiRedux,
-  SiVite,
-  SiFigma,
-  SiC,
-  SiCplusplus,
-  SiExpress,
-  SiGithub,
-} from "react-icons/si";
-
-const techStack = [
+const strengths = [
   {
-    category: "Frontend Development",
-    skills: [
-      { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
-      { name: "CSS3", icon: <SiCss3 className="text-blue-400" /> },
-      { name: "JavaScript", icon: <SiJavascript className="text-yellow-300" /> },
-      { name: "React.js", icon: <FaReact className="text-cyan-400" /> },
-      { name: "Vite", icon: <SiVite className="text-purple-400" /> },
-      { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
-      { name: "Bootstrap", icon: <SiBootstrap className="text-violet-500" /> },
-      { name: "UI/UX", icon: <SiFigma className="text-pink-400" /> },
-      { name: "Responsive Design" },
-    ],
+    title: 'Creative Problem Solver',
+    icon: <FiZap size={24} className="text-[#f472b6]" />,
+    description:
+      'I love breaking down complex problems and building smart, efficient solutions.',
   },
   {
-    category: "Backend Development",
-    skills: [
-      { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-      { name: "Express.js", icon: <SiExpress className="text-gray-400" /> },
-      { name: "REST APIs" },
-      { name: "Websockets" },
-      { name: "Authentication (JWT, OAuth)" },
-    ],
+    title: 'Clean & Scalable Code',
+    icon: <FiCpu size={24} className="text-[#58a6ff]" />,
+    description:
+      'Writing code that is both elegant and maintainable is my top priority.',
   },
   {
-    category: "Database Management",
-    skills: [
-      { name: "MongoDB", icon: <SiMongodb className="text-emerald-400" /> },
-      { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
-    ],
+    title: 'User-First Design',
+    icon: <FiFeather size={24} className="text-[#8b5cf6]" />,
+    description:
+      'Great design is invisible. I craft intuitive experiences that feel effortless to users.',
   },
   {
-    category: "Programming Languages",
-    skills: [
-      { name: "C", icon: <SiC className="text-blue-300" /> },
-      { name: "C++", icon: <SiCplusplus className="text-blue-400" /> },
-      { name: "Core Java", icon: <FaJava className="text-red-400" /> },
-    ],
+    title: 'Team Spirit',
+    icon: <FiUsers size={24} className="text-green-400" />,
+    description:
+      'Collaboration and empathy are at the core of how I work — every project is a team effort.',
   },
-  {
-    category: "Version Control & Deployment",
-    skills: [
-      { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
-      { name: "GitHub", icon: <SiGithub className="text-white" /> },
-    ],
-  },
-  {
-  category: "DevOps & Containerization",
-  skills: [
-    { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
-  ],
-}
-
 ];
 
 const AboutSection = () => {
   return (
     <section
       id="about"
-      className="bg-[#0d1117] text-[#c9d1d9] px-6 py-6 md:px-20 lg:px-14 lg:py-12"
+      className="relative bg-[#0d1117] text-[#c9d1d9] px-6 py-12 md:px-20 lg:px-12"
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 lg:mb-6 tracking-tight bg-gradient-to-r from-[#58a6ff] via-[#8b5cf6] to-[#f472b6] bg-clip-text text-transparent font-mono">
+      {/* Heading */}
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight bg-gradient-to-r from-[#58a6ff] via-[#8b5cf6] to-[#f472b6] bg-clip-text text-transparent font-mono relative"
+      >
         About Me
-      </h2>
-      <p className="text-center text-sm md:text-base text-gray-400 mb-8 lg:mb-12 max-w-3xl mx-auto font-mono leading-relaxed">
-  Hey there! I’m <span className="text-[#58a6ff] font-semibold">Mansi Unge</span> — a curious mind who codes and creates.  
-  As a <strong>Full Stack Developer</strong> and <strong>UI/UX Designer</strong>, I bring ideas to life with clean code and thoughtful design.  
-  Whether it’s crafting smooth interfaces, designing intuitive user journeys, or building powerful backend logic — I love solving problems and building things that just work.  
-  Always learning. Always creating.
-</p>
+        <span className="block h-[3px] w-16 bg-[#58a6ff] mx-auto mt-3 rounded-full shadow-lg animate-pulse" />
+      </motion.h2>
 
+      {/* Flex Container */}
+      <div className="flex flex-col lg:flex-row gap-10 items-start justify-center mx-auto">
+        {/* Left Side: Paragraph */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="max-w-2xl"
+        >
+           <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="text-sm md:text-lg text-gray-400 font-mono leading-loose"
+        >
+          Hey there! I’m{' '}
+          <span className="text-[#58a6ff] font-semibold">Mansi Unge</span> — a
+          curious mind who codes and creates.
+          <br />
+          As a{' '}
+          <strong className="text-[#58a6ff]">Full Stack Developer</strong> and{' '}
+          <strong className="text-[#f472b6]">UI/UX Designer</strong>, I bring
+          ideas to life through clean code and meaningful design.
+          <br />
+          I love solving real-world problems and turning complex ideas into
+          beautiful, functional digital products.
+          <br />
+          <span className="text-[#8b5cf6] font-semibold">
+            Always learning. Always building. 
+          </span>
+        </motion.p>
 
-      {/* Skills Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-full mx-auto">
-        {techStack.map((group, idx) => (
-          <div
-            key={idx}
-            className="bg-[#161b22]/70 backdrop-blur-md rounded-xl p-6 border border-[#30363d] hover:border-[#58a6ff]/60 hover:shadow-[0_0_15px_#58a6ff33] transition-all"
+          {/* CTA Button */}
+          <motion.div
+            className="mt-4 flex gap-4"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            <h3 className="text-lg font-semibold text-[#58a6ff] mb-4 border-b border-[#30363d] pb-2 font-mono">
-              {group.category}
-            </h3>
-            <ul className="flex flex-wrap gap-3">
-              {group.skills.map((skill, i) => (
-                <li
-                  key={i}
-                  className="flex items-center gap-2 px-3 py-1.5 bg-[#0d1117] border border-[#30363d] rounded-full text-sm font-mono text-[#c9d1d9] hover:bg-[#161b22]/80 transition"
-                >
-                  {skill.icon && (
-                    <span className="text-base">{skill.icon}</span>
-                  )}
-                  {skill.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+            <a
+            href="/Unge_Mansi_Resume.pdf"
+            download
+            className="bg-[#3b82f6] hover:bg-[#2563eb] text-white px-2 py-1 lg:px-5 lg:py-2 rounded-md font-semibold text-sm transition shadow"
+          >
+            Download Resume
+          </a>
+          <a
+            href="/projects"
+            className="bg-[#238636] hover:bg-[#2ea043] text-white px-2 py-1 lg:px-5 lg:py-2 rounded-md font-semibold text-sm transition shadow"
+          >
+            View Projects
+          </a>
+          <a
+            href="/contact"
+            className="border border-[#30363d] hover:bg-[#21262d] px-2 py-1 lg:px-5 lg:py-2 rounded-md text-sm font-semibold transition shadow"
+          >
+            Connect
+          </a>
+
+          </motion.div>
+        </motion.div>
+
+        {/* Right Side: Strength Cards */}
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-4xl"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ staggerChildren: 0.2 }}
+        >
+          {strengths.map((item, idx) => (
+            <motion.div
+              key={idx}
+              className="bg-[#161b22] rounded-2xl p-6 border border-[#30363d] hover:shadow-[0_0_20px_#8b5cf650] transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: idx * 0.1 }}
+            >
+              <div className="flex items-center gap-4 mb-3">
+                <div className="bg-[#21262d] p-2 rounded-full">
+                  {item.icon}
+                </div>
+                <h3 className="text-lg font-semibold text-white">
+                  {item.title}
+                </h3>
+              </div>
+              <p className="text-sm text-gray-400 leading-relaxed font-mono">
+                {item.description}
+              </p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
