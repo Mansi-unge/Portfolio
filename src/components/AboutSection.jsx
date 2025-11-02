@@ -95,19 +95,6 @@ const AboutSection = () => {
           >
             Download Resume
           </a>
-          <a
-            href="/projects"
-            className="bg-[#238636] hover:bg-[#2ea043] text-white px-2 py-1 lg:px-5 lg:py-2 rounded-md font-semibold text-sm transition shadow"
-          >
-            View Projects
-          </a>
-          <a
-            href="/contact"
-            className="border border-[#30363d] hover:bg-[#21262d] px-2 py-1 lg:px-5 lg:py-2 rounded-md text-sm font-semibold transition shadow"
-          >
-            Connect
-          </a>
-
           </motion.div>
         </motion.div>
 

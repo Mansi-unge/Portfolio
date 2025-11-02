@@ -1,5 +1,5 @@
-import { FaReact, FaNodeJs, FaJava, FaGitAlt } from "react-icons/fa";
-import { SiDocker, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { FaReact, FaNodeJs, FaJava, FaGitAlt, FaPython } from "react-icons/fa";
+import { SiDocker, SiNextdotjs, SiTypescript, SiFlask } from "react-icons/si";
 import {
   SiMongodb,
   SiMysql,
@@ -40,6 +40,7 @@ const techStack = [
     skills: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
       { name: "Express.js", icon: <SiExpress className="text-gray-400" /> },
+      { name: "Flask", icon: <SiFlask className="text-gray-300" /> },
       { name: "REST APIs" },
       { name: "Websockets" },
       { name: "Authentication (JWT, OAuth)" },
@@ -57,6 +58,7 @@ const techStack = [
     skills: [
       { name: "C", icon: <SiC className="text-blue-300" /> },
       { name: "C++", icon: <SiCplusplus className="text-blue-400" /> },
+      { name: "Python", icon: <FaPython className="text-yellow-400" /> },
       { name: "Core Java", icon: <FaJava className="text-red-400" /> },
     ],
   },
@@ -69,9 +71,7 @@ const techStack = [
   },
   {
     category: "DevOps & Containerization",
-    skills: [
-      { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
-    ],
+    skills: [{ name: "Docker", icon: <SiDocker className="text-blue-400" /> }],
   },
 ];
 
@@ -99,9 +99,7 @@ const Skills = () => {
                   key={i}
                   className="flex items-center gap-2 px-3 py-1.5 bg-[#0d1117] border border-[#30363d] rounded-full text-sm font-mono text-[#c9d1d9] hover:bg-[#161b22]/80 transition"
                 >
-                  {skill.icon && (
-                    <span className="text-base">{skill.icon}</span>
-                  )}
+                  {skill.icon && <span className="text-base">{skill.icon}</span>}
                   {skill.name}
                 </li>
               ))}
