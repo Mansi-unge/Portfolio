@@ -53,7 +53,7 @@ const Footer = () => {
             <FaWhatsapp />
           </a>
           <a
-            href="https://instagram.com/mansi_unge"
+            href="https://www.instagram.com/unge_mansi/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
