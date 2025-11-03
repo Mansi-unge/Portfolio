@@ -85,25 +85,25 @@ const certificates = [
     // title: "Full Stack Web Development (MERN)",
     // issuedBy: "Internshala Trainings",
     // date: "July 2025",
-    img: "TISS Certificate.jpg",
+    img: "TISS_Certificate.jpg",
   },
   {
     // title: "Python for Data Science",
     // issuedBy: "MKCL",
     // date: "June 2025",
-    img: "web designing certificate.jpg",
+    img: "web_designing_certificate.jpg",
   },
   {
     // title: "Responsive Web Design",
     // issuedBy: "MKCL",
     // date: "April 2025",
-    img: "c programming certificate.jpg",
+    img: "c_programming_certificate.jpg",
   },
   {
     // title: "Responsive Web Design",
     // issuedBy: "MKCL",
     // date: "April 2025",
-    img: "c++  programming certificate.jpg",
+    img: "cpp_programming_certificate.jpg",
   },
 ];
 
