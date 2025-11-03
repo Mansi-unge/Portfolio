@@ -16,6 +16,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BlogPage from "./Pages/BlogPage";
 import Skills from "./components/Skills";
+import Profiles from "./Pages/Profiles";
 
 function App() {
   // Inject Tidio Chatbot Script Once (Global)
@@ -47,6 +48,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={ <BlogPage/> } />
+        <Route path="/profiles" element={<Profiles/>} />
       </Routes>
       <Footer />
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar newestOnTop />

@@ -11,10 +11,9 @@ const Header = () => {
 
   // Helper to style active link
   const linkClass = (path) =>
-    `px-3 py-1 rounded-md transition font-mono ${
-      currentPath === path
-        ? "bg-gradient-to-r from-[#8b5cf6] to-[#58a6ff] text-white shadow-md"
-        : "hover:text-white hover:underline"
+    `px-3 py-1 rounded-md transition font-mono ${currentPath === path
+      ? "bg-gradient-to-r from-[#8b5cf6] to-[#58a6ff] text-white shadow-md"
+      : "hover:text-white hover:underline"
     }`;
 
   return (
@@ -41,6 +40,9 @@ const Header = () => {
         </a>
         <a href="/projects" className={linkClass("/projects")}>
           Projects
+        </a>
+        <a href="/profiles" className={linkClass("/profiles")}>
+          Profiles & Achievements
         </a>
         <a href="/blog" className={linkClass("/blog")}>
           Blog
