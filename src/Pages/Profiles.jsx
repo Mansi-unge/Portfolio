@@ -195,7 +195,7 @@ const Profiles = () => {
     Certificates
   </h2>
 
-  <div className="relative overflow-hidden rounded-2xl border border-[#30363d] shadow-lg min-h-[400px] flex items-center justify-center">
+  <div className="relative overflow-hidden rounded-2xl  min-h-[600px] flex items-center justify-center">
     <AnimatePresence mode="popLayout">
       <motion.div
         key={current}
