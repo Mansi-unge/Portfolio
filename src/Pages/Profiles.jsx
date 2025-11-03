@@ -184,68 +184,64 @@ const Profiles = () => {
 </motion.div>
 
 
-      {/* Certificates Slider */}
+     {/* Certificates Slider */}
+<motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.7, delay: 0.3 }}
+  className="relative"
+>
+  <h2 className="text-2xl font-semibold text-center text-[#58a6ff] font-mono mb-6 ">
+    Certificates
+  </h2>
+
+  <div className="relative overflow-hidden rounded-2xl border border-[#30363d] shadow-lg min-h-[400px] flex items-center justify-center">
+    <AnimatePresence mode="popLayout">
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.3 }}
-        className="relative"
+        key={current}
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.6 }}
+        className="absolute inset-0 flex flex-col items-center justify-center p-6"
       >
-        <h2 className="text-2xl font-semibold text-center text-[#58a6ff] font-mono mb-6 ">
-          Certificates
-        </h2>
-
-        <div className="relative overflow-hidden ">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={current}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.6 }}
-              className="flex flex-col items-center justify-center p-6"
-            >
-              <img
-                src={certificates[current].img}
-                alt={certificates[current].title}
-                className="w-full max-h-[500px] object-contain rounded-lg mb-4"
-              />
-              {/* <h3 className="text-lg font-semibold text-[#f0f6fc]">
-                {certificates[current].title}
-              </h3>
-              <p className="text-sm text-gray-400">{certificates[current].issuedBy}</p>
-              <p className="text-xs text-gray-500">{certificates[current].date}</p> */}
-            </motion.div>
-          </AnimatePresence>
-
-          {/* Navigation Buttons */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-3 top-1/2 -translate-y-1/2 bg-[#161b22]/80 hover:bg-[#58a6ff]/20 text-white p-2 rounded-full"
-          >
-            <FaChevronLeft />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-3 top-1/2 -translate-y-1/2 bg-[#161b22]/80 hover:bg-[#58a6ff]/20 text-white p-2 rounded-full"
-          >
-            <FaChevronRight />
-          </button>
-        </div>
-
-        {/* Dots Indicator */}
-        <div className="flex justify-center mt-4 gap-2">
-          {certificates.map((_, index) => (
-            <div
-              key={index}
-              onClick={() => setCurrent(index)}
-              className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
-                index === current ? "bg-[#58a6ff]" : "bg-gray-600"
-              }`}
-            ></div>
-          ))}
-        </div>
+        <img
+          src={certificates[current].img}
+          alt={certificates[current].title}
+          className="w-full max-h-[500px] object-contain rounded-lg"
+        />
       </motion.div>
+    </AnimatePresence>
+
+    {/* Navigation Buttons */}
+    <button
+      onClick={prevSlide}
+      className="absolute left-3 top-1/2 -translate-y-1/2 bg-[#161b22]/80 hover:bg-[#58a6ff]/20 text-white p-2 rounded-full"
+    >
+      <FaChevronLeft />
+    </button>
+    <button
+      onClick={nextSlide}
+      className="absolute right-3 top-1/2 -translate-y-1/2 bg-[#161b22]/80 hover:bg-[#58a6ff]/20 text-white p-2 rounded-full"
+    >
+      <FaChevronRight />
+    </button>
+  </div>
+
+  {/* Dots Indicator */}
+  <div className="flex justify-center mt-4 gap-2">
+    {certificates.map((_, index) => (
+      <div
+        key={index}
+        onClick={() => setCurrent(index)}
+        className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
+          index === current ? "bg-[#58a6ff]" : "bg-gray-600"
+        }`}
+      ></div>
+    ))}
+  </div>
+</motion.div>
+
     </section>
   );
 };
