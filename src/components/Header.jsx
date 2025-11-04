@@ -75,6 +75,9 @@ const Header = () => {
           >
             Projects
           </a>
+          <a href="/profiles" className={linkClass("/profiles")}>
+          Profiles & Achievements
+        </a>
           <a href="/blog" onClick={toggleMenu} className={linkClass("/blog")}>
             Blog
           </a>
